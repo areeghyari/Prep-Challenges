@@ -24,7 +24,7 @@
         {
             "language": "javascript",
             "source": [
-                "function equalizeArray(arr) {\r\n\r\n    let freq = new Map();\r\n    for(let i = 0; i < 3; i++){\r\n        if(freq.has(arr[i])){\r\n            freq.set(arr[i], freq.get(arr[i]) + 1)\r\n        }else{\r\n            freq.set(arr[i], 1)\r\n        }\r\n    }\r\n    let max_freq = Number.MIN_SAFE_INTEGER;\r\n    for(let entry of freq)\r\n        max_freq = Math.max(max_freq, entry[1]);\r\n    \r\n         \r\n        document.write(minDelete(arr, n));\r\n}\r\n"
+                "function equalizeArray(arr,n) {\r\n\r\n    let freq = new Map();\r\n    for(let i = 0; i < 3; i++){\r\n        if(freq.has(arr[i])){\r\n            freq.set(arr[i], freq.get(arr[i]) + 1)\r\n        }else{\r\n            freq.set(arr[i], 1)\r\n        }\r\n    }\r\n    let max_freq = Number.MIN_SAFE_INTEGER;\r\n    for(let entry of freq)\r\n        max_freq = Math.max(max_freq, entry[1]);\r\n    \r\n         \r\n        document.write(equalizeArray(arr, n));\r\n}\r\n"
             ],
             "outputs": []
         },
